@@ -1,19 +1,3 @@
-'''
-	General LQR controller with local model learning
-	Currently implimentable for go-to-goal tasks
-	For tracking trajector need to write function to compute tracking error
-	Aravind Rajeswaran, 12th June 2016
-	IIT Madras, Chennai, India
-'''
-
-'''
-	Current Bug: In the video, MuJoCo also renders the small perturbations
-	used to calculate the local models. Need to figure out how to store only
-	those frames required for the movie.
-	This is purely cosmetic, the code and algorithm calculates the correct
-	control decisions as can be checked from plots (which contain only required frames)
-'''
-
 import gym
 import time
 import numpy as np
